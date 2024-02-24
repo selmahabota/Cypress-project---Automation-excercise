@@ -1,0 +1,338 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2024-02-18T17:56:12.645Z",
+    "end": "2024-02-18T17:57:40.946Z",
+    "duration": 88301
+  },
+  "results": [
+    {
+      "uuid": "7588ba9e-dfee-4838-9ac3-3ce7e12da0ba",
+      "title": "",
+      "fullFile": "cypress\\e2e\\categoryTests.js",
+      "file": "cypress\\e2e\\categoryTests.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "33d20577-f49a-4745-bc79-1593596e698a",
+          "title": "Tests with page object model",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify category page",
+              "fullTitle": "Tests with page object model verify category page",
+              "timedOut": null,
+              "duration": 6710,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_CategoryPage.categoryPage.products();",
+              "err": {},
+              "uuid": "232f8aad-d6b2-42c0-8084-8b9ee23e6e88",
+              "parentUUID": "33d20577-f49a-4745-bc79-1593596e698a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "232f8aad-d6b2-42c0-8084-8b9ee23e6e88"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6710,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "d4aa05b7-dc4e-4ca2-a8ec-eac4b5811caa",
+      "title": "",
+      "fullFile": "cypress\\e2e\\contactTest.js",
+      "file": "cypress\\e2e\\contactTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "94d4bfb2-ae3a-4798-aa63-ba3d02bee76a",
+          "title": "Tests for contact form",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify contact page",
+              "fullTitle": "Tests for contact form verify contact page",
+              "timedOut": null,
+              "duration": 9064,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "contactPage.fillContactForm();\ncy.get('[class=\"status alert alert-success\"]').should('contain', 'Success! Your details have been submitted successfully.');\ncy.get('[class=\"contact-form\"]').find('h2').should('contain', 'Get In Touch');",
+              "err": {},
+              "uuid": "2f710773-d94d-4492-b739-07a064bf6aec",
+              "parentUUID": "94d4bfb2-ae3a-4798-aa63-ba3d02bee76a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2f710773-d94d-4492-b739-07a064bf6aec"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9064,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "3625f884-5517-4128-8550-cdb8326bb89a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\loginTests.js",
+      "file": "cypress\\e2e\\loginTests.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f3a9b3a7-3403-4b21-b44e-61e559c13175",
+          "title": "Tests with page object model",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify login page",
+              "fullTitle": "Tests with page object model verify login page",
+              "timedOut": null,
+              "duration": 24918,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "navigateTo.loginAndRegistrationPage();\nconst {\n  username,\n  email,\n  password\n} = registrationPage.submitRegistrationForm();\nregistrationPage.logOut();\nloginPage.loginSubmitForm(email, password);\ncy.get('[href=\"/delete_account\"]').should('contain', 'Delete Account');\ncy.get('[href=\"/logout\"]').should('contain', 'Logout');",
+              "err": {},
+              "uuid": "a9b8ad8d-7f64-4241-9082-1447d63cd659",
+              "parentUUID": "f3a9b3a7-3403-4b21-b44e-61e559c13175",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a9b8ad8d-7f64-4241-9082-1447d63cd659"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 24918,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "66581793-8fbe-40db-adb6-92d831662ed7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\registrationTests.js",
+      "file": "cypress\\e2e\\registrationTests.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "644f2a5e-8b26-4841-93ed-e788aad901cf",
+          "title": "Tests with page object model",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify registration page",
+              "fullTitle": "Tests with page object model verify registration page",
+              "timedOut": null,
+              "duration": 11355,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "navigateTo.loginAndRegistrationPage();\nregistrationPage.submitRegistrationForm();\ncy.get('[data-qa=\"account-created\"]').should('contain', 'Account Created!');\ncy.get('[class=\"col-sm-9 col-sm-offset-1\"]').find('p').eq(0).should('contain', 'Congratulations! Your new account has been successfully created!');",
+              "err": {},
+              "uuid": "273011b5-73a8-42ca-86a1-39ce4e24100c",
+              "parentUUID": "644f2a5e-8b26-4841-93ed-e788aad901cf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "273011b5-73a8-42ca-86a1-39ce4e24100c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11355,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "9975b58a-01d7-46ee-ad70-dbc22584eed5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cartTests.js",
+      "file": "cypress\\e2e\\cartTests.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8a038e95-d819-4140-aa73-a69d5409f6a4",
+          "title": "Tests with page object model",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify cart page",
+              "fullTitle": "Tests with page object model verify cart page",
+              "timedOut": null,
+              "duration": 26537,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "navigateTo.loginAndRegistrationPage();\nregistrationPage.submitRegistrationForm();\ncartPage.putInCart();\nexpect(cartPage.isPriceGood()).to.be.true;\nexpect(cartPage.cartPaying()).to.be.true;\ncartPage.placeOrder();\ncartPage.isPaymentDone();",
+              "err": {},
+              "uuid": "8dd18306-993e-4f1e-ab39-a6a189d3938d",
+              "parentUUID": "8a038e95-d819-4140-aa73-a69d5409f6a4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8dd18306-993e-4f1e-ab39-a6a189d3938d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 26537,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

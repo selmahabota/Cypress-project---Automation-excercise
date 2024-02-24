@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="25.912" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-02-18T18:27:49" tests="0" file="cypress\e2e\cartTests.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Tests with page object model" timestamp="2024-02-18T18:27:49" tests="1" time="25.907" failures="0">
+    <testcase name="Tests with page object model verify cart page" time="25.802" classname="verify cart page">
+    </testcase>
+  </testsuite>
+</testsuites>

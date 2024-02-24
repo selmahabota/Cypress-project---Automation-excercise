@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-02-18T18:28:25.582Z",
+    "end": "2024-02-18T18:28:33.465Z",
+    "duration": 7883,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "87b796b9-6e06-4313-9727-8eec94659296",
+      "title": "",
+      "fullFile": "cypress\\e2e\\contactTest.js",
+      "file": "cypress\\e2e\\contactTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8ff0e90d-7226-4ced-bbf0-120a5551ec2b",
+          "title": "Tests for contact form",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify contact page",
+              "fullTitle": "Tests for contact form verify contact page",
+              "timedOut": null,
+              "duration": 7829,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "contactPage.fillContactForm();\ncy.get('[class=\"status alert alert-success\"]').should('contain', 'Success! Your details have been submitted successfully.');\ncy.get('[class=\"contact-form\"]').find('h2').should('contain', 'Get In Touch');",
+              "err": {},
+              "uuid": "6238ec81-d1cf-4f9b-ab3e-c937c9036b3d",
+              "parentUUID": "8ff0e90d-7226-4ced-bbf0-120a5551ec2b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6238ec81-d1cf-4f9b-ab3e-c937c9036b3d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7829,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<testsuites>
+<testsuite name="Root Suite" timestamp="2024-02-18T17:57:01" tests="0" file="cypress\e2e\loginTests.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Tests with page object model" timestamp="2024-02-18T17:57:01" tests="1" time="24.951" failures="0">
+  
+  <testcase name="Tests with page object model verify login page" time="24.918" classname="verify login page"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2024-02-18T17:56:40" tests="0" file="cypress\e2e\categoryTests.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Tests with page object model" timestamp="2024-02-18T17:56:40" tests="1" time="6.731" failures="0">
+  
+  <testcase name="Tests with page object model verify category page" time="6.710" classname="verify category page"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2024-02-18T17:57:29" tests="0" file="cypress\e2e\registrationTests.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Tests with page object model" timestamp="2024-02-18T17:57:29" tests="1" time="11.386" failures="0">
+  
+  <testcase name="Tests with page object model verify registration page" time="11.355" classname="verify registration page"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2024-02-18T17:56:12" tests="0" file="cypress\e2e\cartTests.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Tests with page object model" timestamp="2024-02-18T17:56:12" tests="1" time="26.599" failures="0">
+  
+  <testcase name="Tests with page object model verify cart page" time="26.537" classname="verify cart page"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2024-02-18T17:56:49" tests="0" file="cypress\e2e\contactTest.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Tests for contact form" timestamp="2024-02-18T17:56:49" tests="1" time="9.090" failures="0">
+  
+  <testcase name="Tests for contact form verify contact page" time="9.064" classname="verify contact page"></testcase>
+  
+</testsuite>
+
+</testsuites>
